@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <title>Nebula</title>
+    <meta content="An interactive web app, inspired by Who Wants to Be a Millionaire, designed to bring training to the 'work from home' environment."
+          name="description">
+    <link href="assets/img/rocket.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="assets/img/rocket.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="assets/img/rocket.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="assets/img/rocket.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="assets/img/rocket.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet">
+    <link href="assets/css/Footer-Basic.css" rel="stylesheet">
+    <link href="assets/css/Highlight-Blue.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-image: url(&quot;assets/img/nebula.jpg&quot;);font-family: Orbitron, sans-serif;background-repeat: no-repeat;">
+<!-- Start: List-group show-hide div content on-click -->
+<div class="row">
+    <div class="col-lg-4">
+        <div class="list-group"><a class="list-group-item list-group-item-action" data-toggle="list" href="#list-home"
+                                   style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 24px;">$
+            1,000,000</a><a class="list-group-item list-group-item-action"
+                            data-toggle="list" href="#list-profile"
+                            style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 22px;">$
+            500,000</a><a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages"
+                          style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 22px;">$
+            250,000</a>
+            <a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 22px;">$ 125,
+                000</a><a class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                          style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 20px;">$
+                64,000</a><a class="list-group-item list-group-item-action"
+                             data-toggle="list" href="#list-settings"
+                             style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 20px;">$
+                32,000</a><a class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                             style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 20px;">$
+                16,000</a><a class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                             style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 18px;">$
+                4,000</a>
+            <a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 18px;">$ 2,000</a><a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 18px;">$ 1,000</a><a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 16px;">$ 500</a><a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 16px;">$ 400</a><a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 16px;">$ 300</a>
+            <a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 16px;">$ 200</a><a
+                    class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings"
+                    style="background-color: rgba(30, 39, 46, 35%);color: rgb(255,255,255);font-size: 16px;">$ 100</a>
+        </div>
+    </div>
+    <div class="col" style="background-color: rgba(30, 39, 46, 35%);">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro"></div>
+            <!-- End: Intro -->
+            <p class="text-center" id="subject"
+               onload="load()" style="color: rgb(255,255,255);margin-bottom: 100px;margin-top: 100px;font-size: 32px;">
+                Question</p>
+            <!-- Start: Buttons -->
+            <div class="buttons"></div>
+            <!-- End: Buttons -->
+            <div class="row row-cols-2">
+                <div class="col text-center" style="margin-bottom: 50px;"><a class="text-left" href="#"
+                                                                             style="font-size: 72px;">A</a></div>
+                <div class="col text-center" style="margin-bottom: 50px;"><a href="#" style="font-size: 72px;">B</a>
+                </div>
+                <div class="col text-center"><a href="#" style="font-size: 72px;">C</a></div>
+                <div class="col text-center"><a href="#" style="font-size: 72px;">D</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End: List-group show-hide div content on-click -->
+<!-- Start: Highlight Blue -->
+<div class="highlight-blue" style="background-color: rgba(30, 39, 46, 35%);padding: 25px;">
+    <div class="container">
+        <!-- Start: Buttons -->
+        <div class="buttons"><a class="btn btn-primary" onclick="warning()" role="button"
+                                style="font-size: 22px; hover:">QUIT GAME</a></div>
+        <!-- End: Buttons -->
+    </div>
+</div>
+<!-- End: Highlight Blue -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/load.js"></script>
+<script src="assets/js/warning.js"></script>
+</body>
+
+</html>
