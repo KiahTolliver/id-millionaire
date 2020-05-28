@@ -1,0 +1,21 @@
+.btn.btn-primary {
+  background: rgba(30, 39, 46, 35%);
+  border: 1.5px solid;
+  border-color: rgb(235,239,241);
+}
+
+.btn.btn-primary:hover {
+  background-color: #1e272e;
+}
+
+a {
+  color: #d2dae2;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #d2dae2;
+  text-decoration: underline;
+}
+
