@@ -150,6 +150,11 @@ if ($('body').is('.game')) {
         localStorage.setItem("subject", "Modulation Principles");
     }
 
+    if (localStorage.getItem("subject") == null) {
+        alert("This topic is under development, please check back soon!");
+        window.location.href = "menu.html";
+    }
+
     Object.keys(questions[localStorage.getItem("subject")]).forEach(setupUi);
 
     function setupUi(question) {
