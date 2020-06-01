@@ -120,7 +120,7 @@ if ($('body').is('.game')) {
                 b: "E",
                 c: "D",
                 d: "Troposphere",
-                correct: "f"
+                correct: "a"
             },
             1000000: {
                 heading: "The factor that has the greatest adverse effect on radio waves is _______.",
@@ -171,36 +171,35 @@ if ($('body').is('.game')) {
     document.body.addEventListener('click', function (event) {
         const element = event.target;
 
-
         if (element.classList.contains("col")) {
             event.stopPropagation()
-        }
+        } else {
+            element.style.animationPlayState = "paused";
 
-        element.style.animationPlayState = "paused";
+            answers.forEach(resetAnswers);
 
-        answers.forEach(resetAnswers);
+            function resetAnswers(answer) {
+                document.getElementById(answer).style.backgroundColor = "rgba(30, 39, 46, 75%)";
+                document.getElementById(answer).disabled = false;
+            }
 
-        function resetAnswers(answer) {
-            document.getElementById(answer).style.backgroundColor = "rgba(30, 39, 46, 75%)";
-            document.getElementById(answer).disabled = false;
-        }
+            if (element.id === "btn-quit") {
+                quitGame();
+            } else if (element.classList.contains("nav-link")) {
+                const subject = localStorage.getItem("subject");
+                const question = document.activeElement.id;
 
-        if (element.id === "btn-quit") {
-            quitGame();
-        } else if (element.classList.contains("nav-link")) {
-            const subject = localStorage.getItem("subject");
-            const question = document.activeElement.id;
+                localStorage.setItem("question", document.activeElement.id);
+                localStorage.setItem("correctAnswer", questions[subject][question]["correct"]);
 
-            localStorage.setItem("question", document.activeElement.id);
-            localStorage.setItem("correctAnswer", questions[subject][question]["correct"]);
-
-            document.getElementById('subject').textContent = questions[subject][question]["heading"];
-            document.getElementById('a').textContent = questions[subject][question]["a"];
-            document.getElementById('b').textContent = questions[subject][question]["b"];
-            document.getElementById('c').textContent = questions[subject][question]["c"];
-            document.getElementById('d').textContent = questions[subject][question]["d"];
-        } else if (element.classList.contains("btn-primary")) {
-            checkAnswer(localStorage.getItem("subject"), localStorage.getItem("question"));
+                document.getElementById('subject').textContent = questions[subject][question]["heading"];
+                document.getElementById('a').textContent = questions[subject][question]["a"];
+                document.getElementById('b').textContent = questions[subject][question]["b"];
+                document.getElementById('c').textContent = questions[subject][question]["c"];
+                document.getElementById('d').textContent = questions[subject][question]["d"];
+            } else if (element.classList.contains("btn-primary")) {
+                checkAnswer(localStorage.getItem("subject"), localStorage.getItem("question"));
+            }
         }
     });
 
