@@ -60,10 +60,10 @@ if ($('body').is('.game')) {
             },
             4000: {
                 heading: "often called the ionospheric wave, is radiated in an upward direction and returned to Earth at some distant location because of refraction from the ionosphere.",
-                a: "ground wave",
-                b: "surface wave",
-                c: "space wave",
-                d: "sky wave",
+                a: "Ground wave",
+                b: "Surface wave",
+                c: "Space wave",
+                d: "Sky wave",
                 correct: "d"
             },
             8000: {
@@ -108,10 +108,10 @@ if ($('body').is('.game')) {
             },
             250000: {
                 heading: "The path that a refracted wave follows to the receiver depends on the ___ at which the wave strikes the ionosphere.",
-                a: "time",
-                b: "velocity",
-                c: "frequency",
-                d: "angle",
+                a: "Time",
+                b: "Velocity",
+                c: "Frequency",
+                d: "Angle",
                 correct: "d"
             },
             500000: {
@@ -119,15 +119,15 @@ if ($('body').is('.game')) {
                 a: "F",
                 b: "E",
                 c: "D",
-                d: "troposphere",
+                d: "Troposphere",
                 correct: "f"
             },
             1000000: {
                 heading: "The factor that has the greatest adverse effect on radio waves is _______.",
-                a: "weather",
-                b: "distance",
-                c: "absorption",
-                d: "temperature",
+                a: "Weather",
+                b: "Distance",
+                c: "Absorption",
+                d: "Temperature",
                 correct: "c"
             }
         }
@@ -273,8 +273,8 @@ if ($('body').is('.game')) {
                 document.getElementById("8000").style.animationPlayState = "running";
                 break;
             case "8000":
-                document.getElementById("160000").classList.toggle("disabled");
-                document.getElementById("160000").style.animationPlayState = "running";
+                document.getElementById("16000").classList.toggle("disabled");
+                document.getElementById("16000").style.animationPlayState = "running";
                 break;
             case "16000":
                 document.getElementById("32000").classList.toggle("disabled");
@@ -284,7 +284,7 @@ if ($('body').is('.game')) {
                 document.getElementById("64000").classList.toggle("disabled");
                 document.getElementById("64000").style.animationPlayState = "running";
                 break;
-            case "640000":
+            case "64000":
                 document.getElementById("125000").classList.toggle("disabled");
                 document.getElementById("125000").style.animationPlayState = "running";
                 break;

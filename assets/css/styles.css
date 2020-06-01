@@ -1,7 +1,7 @@
 .btn.btn-primary {
-    background: rgba(30, 39, 46, 55%);
+    background: rgba(30, 39, 46, 75%);
     border: 1.5px solid;
-    border-color: rgb(235, 239, 241);
+    border-color: #fff;
 }
 
 .btn.btn-primary:hover {
