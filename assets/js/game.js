@@ -130,6 +130,137 @@ if ($('body').is('.game')) {
                 d: "Temperature",
                 correct: "c"
             }
+        },
+
+        "RF Communications": {
+            100: {
+                heading: "Any transmission, emission, or reception of signs, signals, writings, images, or sounds."
+                a: "Telecommunications",
+                b: "Broadcast",
+                c: "Calibration",
+                d: "Telemetry",
+                correct: "a"
+            },
+            200 : {
+                heading: "What are the two types of electrical communications?"
+                a: "Radio and wire",
+                b: "Television and wire",
+                c: "Telegraph and radio",
+                d: "Television and radio",
+                correct: "a"
+            },
+            300 : {
+                heading: "RTTY stand for what?"
+                a: "radio techtypewriter",
+                b: "radar teletypewriter",
+                c: "radio teletypewriter",
+                d: "radar telemetry and targeting",
+                correct : "c"
+            },
+            400 : {
+                heading: "Radiotelegraph transmissions are referred to as continuous wave (cw) telegraphy. CW is valuable when communicating to, from, and among widely separated naval units. What is the main advantage of the CW mode?"
+                a: "Cost",
+                b: "Speed",
+                c: "Security",
+                d: "Reliability",
+                correct: "d"
+            },
+            500 : {
+                heading: "Tactical communications is usually considered as line-of-sight. What maximum distance is normally within the line-of-sight range?"
+                a: "5 miles",
+                b: "25 miles",
+                c: "50 miles",
+                d: "250 miles",
+                correct: "b"
+            },
+            1000 : {
+                heading: "Navy use of the low-frequency band is mainly for which, if any, of the following broadcasts?"
+                a: "Ship to shore",
+                b: "Fleet multichannel",
+                c: "Space vehicle telemetry",
+                d: "None of the above",
+                correct: "b"
+            },
+            2000 : {
+                heading: "VLF transmitters are used primarily for which of the following purposes?"
+                a: "Navigation and fleet communications",
+                b: "Frequency standards and time signals",
+                c: "Astronomy and oscillator calibration",
+                d: "Aircraft control and space vehicle tracking",
+                correct: "a"
+            },
+            4000 : {
+                heading: "HF communications over long-distance trunks, or links between fixed terminals are examples of which of the following types of systems?"
+                a: "Fleet broadcast",
+                b: "Point-to-point",
+                c: "Ground-to-air",
+                d: "Ship-to-shore",
+                correct: "b"
+            },
+            8000 : {
+                heading: "The method for transmitting and receiving still images. These images can be maps, photographs, and handwritten or printed text."
+                a: "Facsimile",
+                b: "Fading",
+                c: "Framing",
+                d: "Frequency Synthesizer",
+                correct: "a"
+            },
+            16000 : {
+                heading: "Normally the transmission range of VHF is limited to line of sight. What technique is used to increase this range?"
+                a: "Tropospheric scatter",
+                b: "Atmospheric diversity",
+                c: "Ionospheric maneuvering",
+                d: "Each of the above",
+                correct: "a"
+            },
+            32000 : {
+                heading: "Extremely low-frequency transmissions are primarily directed at which of the following users?"
+                a: "Shore installations",
+                b: "Surface ships",
+                c: "Submarines",
+                d: "Aircraft",
+                correct: "c"
+            },
+            64000 : {
+                heading:"Which of the following switched networks extends tactical voice to shore based operational commands?"
+                a: "NORATS",
+                b: "AUTOVON",
+                c: "AUTODIN",
+                d: "AUTOSEVOCOM",
+                correct: "a"
+            },
+            125000 : {
+                heading: "Sending a message on several frequencies at once is an example of which of the following transmission types?"
+                a: "Time-diversity",
+                b: "Phase-diversity",
+                c: "Distance-diversity",
+                d: "Frequency-diversity",
+                correct: "d"
+            },
+            250000 : {
+                heading: "A CW transmitter must contain which of the following components?"
+                a: "A traveling-wave tube",
+                b: "A demodulator",
+                c: "A combiner",
+                d: "A keyer",
+                correct: "d"
+            },
+            500000 : {
+                heading: "The process of heterodyning takes place in which of the following receiver circuits?"
+                a: "Mixer",
+                b: "Comparator",
+                c: "Oscillator",
+                d: "Second IF amplifier",
+                correct: "a"
+            },
+            1000000 : {
+                heading: "Two or more circuits within a receiver are varied by a single control, through which of the following processes?"
+                a: "Frequency synthesis",
+                b: "Automatic gain control",
+                c: "Automatic frequency control",
+                d: "Ganged tuning",
+                correct: "d"
+            }
         }
     };
 
