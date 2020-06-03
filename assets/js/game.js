@@ -213,14 +213,16 @@ if ($('body').is('.game')) {
                 d: "Each of the above",
                 correct: "a"
             },
+
             32000: {
-                heading: "Extremely low-frequency transmissions are primarily directed at which of the following users?",
-                a: "Shore installations",
-                b: "Surface ships",
-                c: "Submarines",
-                d: "Aircraft",
+                heading: "A method of operation in which telecommunications between stations takes place simultaneously in both directions using two separate frequencies.",
+                a: "Half-duplex",
+                b: "Semi-duplex ",
+                c: "Full-duplex",
+                d: "Broadcast",
                 correct: "c"
             },
+
             64000: {
                 heading: "Which of the following switched networks extends tactical voice to shore based operational commands?",
                 a: "NORATS",
