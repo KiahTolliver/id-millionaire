@@ -273,11 +273,11 @@ if ($('body').is('.game')) {
 
     if (index === "index=wave-propagation") {
         localStorage.setItem("subject", "Wave Propagation");
-    } else if (index === "radar-principles") {
+    } else if (index === "index=radar-principles") {
         localStorage.setItem("subject", "Radar Principles");
-    } else if (index === "rf-communications") {
+    } else if (index === "index=rf-communications") {
         localStorage.setItem("subject", "RF Communications");
-    } else if (index === "modulation-principles") {
+    } else if (index === "index=modulation-principles") {
         localStorage.setItem("subject", "Modulation Principles");
     }
 
