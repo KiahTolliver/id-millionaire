@@ -4,7 +4,7 @@ An interactive web app, inspired by Who Wants to Be a Millionaire, designed to b
 
 ## Installation (Desktop Client)
 
-Optional desktop client is available [here](https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe), and desktop client repository can be accessed from [here](https://github.com/wingnut29/Nebula/archive/master.zip).
+Optional desktop client is available [here](https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe), and desktop client repository can be accessed from [here](https://github.com/wingnut29/Nebula/).
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Nebula requirements.
 
