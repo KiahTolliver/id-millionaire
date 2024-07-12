@@ -273,8 +273,8 @@ if ($('body').is('.game')) {
 
     localStorage.clear();
 
-    if (index === "index=wave-propagation") {
-        localStorage.setItem("subject", "Wave Propagation");
+    if (index === "index=identity-basics") {
+        localStorage.setItem("subject", "Identity Basics");
     } else if (index === "index=radar-principles") {
         localStorage.setItem("subject", "Radar Principles");
     } else if (index === "index=rf-communications") {
