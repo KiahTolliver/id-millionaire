@@ -1,134 +1,134 @@
 if ($('body').is('.game')) {
     const answers = ["a", "b", "c", "d"]
     const questions = {
-        "Wave Propagation": {
+        "Identity Basics": {
             100: {
-                heading: "What is PROPAGATION?",
-                a: "Movement through a medium",
-                b: "Length of a wave",
-                c: "Rate at which a wave travels",
-                d: "Speed at which a wave travels",
-                correct: "a"
+                heading: "What is the term for verifying the identity of a user or system?",
+                a: "Authorization",
+                b: "Authentication",
+                c: "Auditing",
+                d: "Accounting",
+                correct: "b"
             },
             200: {
-                heading: "Sometimes called COMPRESSION WAVES",
-                a: "Transverse waves",
-                b: "Longitudinal waves",
-                c: "Space waves",
-                d: "Pressure waves",
+                heading: "What does SSO stand for in identity management?",
+                a: "Secure System Operation",
+                b: "Single Sign-On",
+                c: "Server Side Optimization",
+                d: "Secure Sign-Out",
                 correct: "b"
             },
             300: {
-                heading: "3-30 GHz",
-                a: "Super High Frequency",
-                b: "Very High Frequency",
-                c: "High Frequency",
-                d: "Extremely High Frequency",
-                correct: "a"
+                heading: "What is a common protocol used for single sign-on?",
+                a: "SMTP",
+                b: "SAML",
+                c: "FTP",
+                d: "HTTP",
+                correct: "b"
             },
             400: {
-                heading: "What is the bending of the waves as they move from one medium into another",
-                a: "Reflection",
-                b: "Diffraction",
-                c: "Refraction",
-                d: "Absorption",
-                correct: "c"
+                heading: "What does MFA stand for?",
+                a: "Multi-Factor Authentication",
+                b: "Maximum-Failure Authentication",
+                c: "Multi-File Access",
+                d: "Minimum-Factor Authentication",
+                correct: "a"
             },
             500: {
-                heading: "Virtually all weather phenomena take place in this region",
-                a: "Stratosphere",
-                b: "Ionosphere",
-                c: "Troposphere",
-                d: "Mesosphere",
-                correct: "c"
+                heading: "Which of these is NOT a factor used in multi-factor authentication?",
+                a: "Something you know",
+                b: "Something you have",
+                c: "Something you are",
+                d: "Something you want",
+                correct: "d"
             },
             1000: {
-                heading: "Is composed of three layers designated D, E, and F",
-                a: "Stratosphere",
-                b: "Ionosphere",
-                c: "Troposphere",
-                d: "Mesosphere",
+                heading: "What is the purpose of OAuth?",
+                a: "To authenticate users",
+                b: "To provide access delegation",
+                c: "To encrypt data",
+                d: "To manage user roles",
                 correct: "b"
             },
             2000: {
-                heading: "One-third farther than the natural horizon",
-                a: "Radar horizon",
-                b: "Radio horizon",
-                c: "Virtual horizon",
-                d: "Natural horizon",
+                heading: "Which of the following is a popular identity provider?",
+                a: "AWS Lambda",
+                b: "Okta",
+                c: "Docker",
+                d: "Kubernetes",
                 correct: "b"
             },
             4000: {
-                heading: "often called the ionospheric wave, is radiated in an upward direction and returned to Earth at some distant location because of refraction from the ionosphere.",
-                a: "Ground wave",
-                b: "Surface wave",
-                c: "Space wave",
-                d: "Sky wave",
-                correct: "d"
-            },
-            8000: {
-                heading: "Known as the maximum frequency at which radio waves can be transmitted vertically and refracted back to Earth",
-                a: "Critical frequency",
-                b: "Maximum frequency",
-                c: "Optimum Frequency",
-                d: "Terminal frequency",
+                heading: "What does the acronym IAM stand for in the context of identity management?",
+                a: "Identity and Access Management ",
+                b: "Information and Access Management",
+                c: "Identity and Authentication Management",
+                d: "Internet Access Management",
                 correct: "a"
             },
-            16000: {
-                heading: "Factor that can result in annoying or impossible operating conditions and radio communications.",
-                a: "Operating interference",
-                b: "Communication interference",
-                c: "Communication fault",
-                d: "Electromagnetic interference",
-                correct: "d"
-            },
-            32000: {
-                heading: "This causes variations in the ionization density.",
-                a: "tidal cycle",
-                b: "27-day sunspot cycle",
-                c: "full moon cycle",
-                d: "29-day sunspot cycle",
+            8000: {
+                heading: "Which standard is commonly used for passwordless authentication?",
+                a: "SAML",
+                b: "FIDO2",
+                c: "LDAP",
+                d: "Kerberos",
                 correct: "b"
             },
+            16000: {
+                heading: "What is a 'claim' in the context of identity management?",
+                a: "A request for data",
+                b: "An assertion about an entity",
+                c: "A denial of access",
+                d: "A type of encryption",
+                correct: "b"
+            },
+            32000: {
+                heading: "Which protocol is often used for directory services and single sign-on within a Windows environment?",
+                a: "OAuth",
+                b: "SAML",
+                c: "LDAP",
+                d: "OpenID Connect",
+                correct: "c"
+            },
             64000: {
-                heading: "Highest around noon when ultraviolet light waves from the sun are the most intense.",
-                a: "Maximum usable frequency",
-                b: "optimum frequency",
-                c: "lowest usable frequency",
-                d: "full frequency",
+                heading: "What is the primary benefit of using federated identity management?",
+                a: "Reduces the number of passwords users need to remember",
+                b: "Increases the complexity of identity management",
+                c: "Centralizes all user data in one system",
+                d: "Eliminates the need for user authentication",
                 correct: "a"
             },
             125000: {
-                heading: "A wave whose frequency is too low is absorbed to such an extent that it is too weak for reception.",
-                a: "Maximum usable frequency",
-                b: "optimum frequency",
-                c: "lowest usable frequency",
-                d: "full frequency",
-                correct: "c"
+                heading: "What does 'SCIM' stand for in identity management?",
+                a: "Secure Credential Identity Management",
+                b: "System for Cross-domain Identity Management",
+                c: "Standardized Credential Interface Module",
+                d: "Simple Cloud Identity Management",
+                correct: "b"
             },
             250000: {
-                heading: "The path that a refracted wave follows to the receiver depends on the ___ at which the wave strikes the ionosphere.",
-                a: "Time",
-                b: "Velocity",
-                c: "Frequency",
-                d: "Angle",
-                correct: "d"
+                heading: "Which component is essential for implementing Zero Trust architecture?",
+                a: "Firewall",
+                b: "VPN",
+                c: "Continuous verification",
+                d: "DNS",
+                correct: "c"
             },
             500000: {
-                heading: "The __ layers are responsible for high-frequency, long distance transmission.",
-                a: "F",
-                b: "E",
-                c: "D",
-                d: "Troposphere",
-                correct: "a"
+                heading: "Which of the following is NOT a principle of Zero Trust security?",
+                a: "Always verify",
+                b: "Assume breach",
+                c: "Trust but verify",
+                d: "Least privilege access",
+                correct: "c"
             },
             1000000: {
-                heading: "The factor that has the greatest adverse effect on radio waves is _______.",
-                a: "Weather",
-                b: "Distance",
-                c: "Absorption",
-                d: "Temperature",
-                correct: "c"
+                heading: "Which technology can be used to enhance security by verifying user identity based on their behavior?",
+                a: "Biometrics",
+                b: "Behavioral analytics",
+                c: "CAPTCHA",
+                d: "Token-based authentication",
+                correct: "b"
             }
         },
 
