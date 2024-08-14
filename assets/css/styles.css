@@ -1,11 +1,13 @@
 .btn.btn-primary {
-    background: rgba(30, 39, 46, 75%);
-    border: 1.5px solid;
-    border-color: #fff;
+    background: #F6F1E7;
 }
 
 .btn.btn-primary:hover {
     background-color: #1e272e;
+}
+
+.btn.btn-secondary {
+    background: #191919;
 }
 
 a {
