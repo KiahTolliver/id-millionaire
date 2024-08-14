@@ -1,6 +1,7 @@
 .btn.btn-primary {
     background: #F6F1E7;
     color: #1e272e;
+    border-radius: 10%;
 }
 
 .btn.btn-secondary {
