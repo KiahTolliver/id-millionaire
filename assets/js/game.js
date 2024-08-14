@@ -312,7 +312,7 @@ if ($('body').is('.game')) {
             answers.forEach(resetAnswers);
 
             function resetAnswers(answer) {
-                document.getElementById(answer).style.backgroundColor = "rgba(30, 39, 46, 75%)";
+                document.getElementById(answer).style.backgroundColor = "#F6F1E7";
                 document.getElementById(answer).disabled = false;
             }
 
