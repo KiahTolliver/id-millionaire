@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
-    <title>Nebula</title>
-    <meta content="Nebula" name="twitter:title">
+    <title>ID Millionaire</title>
+    <meta content="ID Millionaire" name="twitter:title">
     <meta content="assets/img/rocket.png" name="twitter:image">
     <meta content="website" property="og:type">
     <meta content="An interactive web app, inspired by Who Wants to Be a Millionaire, designed to bring training to the work from home environment."
@@ -32,27 +32,32 @@
     <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 
-<body class="game" style="font-family: Orbitron, sans-serif;background-image: url(&quot;assets/img/nebula.jpg&quot;);">
+<body class="game" style="font-family: Arial, Helvetica, sans-serif, sans-serif;background-image: url(&quot;assets/img/devday.jpg&quot;);">
 <!-- Start: List-group show-hide div content on-click -->
+<div class="row">
+    <div class="col-lg-3">
+        <img src="assets/img/logo.png" style="width: 100%;height: 100%; padding: 20px;">
+    </div>
+</div>
 <div class="row" style="width: 100%;height: 100%;">
-    <div class="col-lg-4" id="menu" style="font-size: 20px;">
+    <div class="col-lg-4" id="menu" style="font-size: 28px;">
         <ul class="nav nav-pills flex-column" style="width: auto;margin: 15px;">
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="1000000">$ 1,000,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="500000">$ 500,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="250000">$ 250,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="125000">$ 125,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="64000">$ 64,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="32000">$ 32,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="16000">$ 16,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="8000">$ 8,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="4000">$ 4,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="2000">$ 2,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="1000">$ 1,000</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="500">$ 500</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="400">$ 400</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="300">$ 300</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="200">$ 200</a></li>
-            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="100">$ 100</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="1000000">1,000,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="500000">500,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="250000">250,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="125000">125,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="64000">64,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="32000">32,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="16000">16,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="8000">8,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="4000">4,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="2000">2,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="1000">1,000</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="500">500</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="400">400</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="300">300</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="200">200</a></li>
+            <li class="nav-item"><a class="nav-link pulse animated infinite" href="#" id="100">100</a></li>
         </ul>
     </div>
     <div class="col">
@@ -61,7 +66,7 @@
             <div class="intro"></div>
             <!-- End: Intro -->
             <p class="text-center" id="subject"
-               onload="load()" style="color: rgb(255,255,255);margin-bottom: 100px;margin-top: 100px;font-size: 32px;">
+               onload="load()" style="color: rgb(255,255,255);margin-bottom: 100px;margin-top: 100px;font-size: 42px;">
                 Please select a question to begin</p>
             <!-- Start: Buttons -->
             <div class="buttons"></div>
@@ -69,29 +74,29 @@
         </div>
         <!-- Start: Buttons -->
         <div class="text-center buttons" style="margin-top: 100px;margin-bottom: 50px;"><a
-                class="btn btn-primary btn-quit" href="index.html" id="btn-quit"
+                class="btn btn-secondary btn-quit" href="index.html" id="btn-quit"
                 role="button"
                 style="font-size: 22px;color: rgb(255,255,255);position: fixed;right: 0;top: 0;margin: 15px;">QUIT GAME</a></div>
         <!-- End: Buttons -->
         <div class="row text-center">
-            <div class="col">
-                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="a" style="font-size: 20px;width: 260px;height: 180px;margin: 15px;"
+            <div class="col-lg-6">
+                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="a" style="font-size: 40px;width: 500px;height: 180px;margin: 5px;"
                         type="button"></button>
             </div>
-            <div class="col">
-                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="b" style="width: 260px;height: 180px;font-size: 20px;margin: 15px;"
+            <div class="col-lg-6">
+                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="b" style="width: 500px;height: 180px;font-size: 40px;margin: 5px;"
                         type="button"></button>
             </div>
-            <div class="col">
-                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="c" style="width: 260px;height: 180px;font-size: 20px;margin: 15px;"
+            <br />
+            <div class="col-lg-6">
+                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="c" style="width: 500px;height: 180px;font-size: 40px;margin: 5px;"
                         type="button"></button>
             </div>
-            <div class="col">
-                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="d" style="width: 260px;height: 180px;font-size: 20px;margin: 15px;"
+            <div class="col-lg-6">
+                <button class="btn btn-primary" data-bs-hover-animate="pulse" id="d" style="width: 500px;height: 180px;font-size: 40px;margin: 5px;"
                         type="button"></button>
-            </div>
+            </div>            
         </div>
-    </div>
 </div>
 <!-- End: List-group show-hide div content on-click -->
 <script src="assets/js/jquery.min.js"></script>

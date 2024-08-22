@@ -1,267 +1,267 @@
 if ($('body').is('.game')) {
     const answers = ["a", "b", "c", "d"]
     const questions = {
-        "Wave Propagation": {
+        "Identity Basics": {
             100: {
-                heading: "What is PROPAGATION?",
-                a: "Movement through a medium",
-                b: "Length of a wave",
-                c: "Rate at which a wave travels",
-                d: "Speed at which a wave travels",
-                correct: "a"
+                heading: "What is the term for verifying the identity of a user or system?",
+                a: "Authorization",
+                b: "Authentication",
+                c: "Auditing",
+                d: "Accounting",
+                correct: "b"
             },
             200: {
-                heading: "Sometimes called COMPRESSION WAVES",
-                a: "Transverse waves",
-                b: "Longitudinal waves",
-                c: "Space waves",
-                d: "Pressure waves",
+                heading: "What does SSO stand for in identity management?",
+                a: "Secure System Operation",
+                b: "Single Sign-On",
+                c: "Server Side Optimization",
+                d: "Secure Sign-Out",
                 correct: "b"
             },
             300: {
-                heading: "3-30 GHz",
-                a: "Super High Frequency",
-                b: "Very High Frequency",
-                c: "High Frequency",
-                d: "Extremely High Frequency",
-                correct: "a"
+                heading: "What is a common protocol used for single sign-on?",
+                a: "SMTP",
+                b: "SAML",
+                c: "FTP",
+                d: "HTTP",
+                correct: "b"
             },
             400: {
-                heading: "What is the bending of the waves as they move from one medium into another",
-                a: "Reflection",
-                b: "Diffraction",
-                c: "Refraction",
-                d: "Absorption",
-                correct: "c"
+                heading: "What does MFA stand for?",
+                a: "Multi-Factor Authentication",
+                b: "Maximum-Failure Authentication",
+                c: "Multi-File Access",
+                d: "Minimum-Factor Authentication",
+                correct: "a"
             },
             500: {
-                heading: "Virtually all weather phenomena take place in this region",
-                a: "Stratosphere",
-                b: "Ionosphere",
-                c: "Troposphere",
-                d: "Mesosphere",
-                correct: "c"
+                heading: "Which of these is NOT a factor used in multi-factor authentication?",
+                a: "Something you know",
+                b: "Something you have",
+                c: "Something you are",
+                d: "Something you want",
+                correct: "d"
             },
             1000: {
-                heading: "Is composed of three layers designated D, E, and F",
-                a: "Stratosphere",
-                b: "Ionosphere",
-                c: "Troposphere",
-                d: "Mesosphere",
+                heading: "What is the purpose of OAuth?",
+                a: "To authenticate users",
+                b: "To provide access delegation",
+                c: "To encrypt data",
+                d: "To manage user roles",
                 correct: "b"
             },
             2000: {
-                heading: "One-third farther than the natural horizon",
-                a: "Radar horizon",
-                b: "Radio horizon",
-                c: "Virtual horizon",
-                d: "Natural horizon",
+                heading: "Which of the following is a popular identity provider?",
+                a: "AWS Lambda",
+                b: "Okta",
+                c: "Docker",
+                d: "Kubernetes",
                 correct: "b"
             },
             4000: {
-                heading: "often called the ionospheric wave, is radiated in an upward direction and returned to Earth at some distant location because of refraction from the ionosphere.",
-                a: "Ground wave",
-                b: "Surface wave",
-                c: "Space wave",
-                d: "Sky wave",
-                correct: "d"
-            },
-            8000: {
-                heading: "Known as the maximum frequency at which radio waves can be transmitted vertically and refracted back to Earth",
-                a: "Critical frequency",
-                b: "Maximum frequency",
-                c: "Optimum Frequency",
-                d: "Terminal frequency",
+                heading: "What does the acronym IAM stand for in the context of identity management?",
+                a: "Identity and Access Management ",
+                b: "Information and Access Management",
+                c: "Identity and Authentication Management",
+                d: "Internet Access Management",
                 correct: "a"
             },
-            16000: {
-                heading: "Factor that can result in annoying or impossible operating conditions and radio communications.",
-                a: "Operating interference",
-                b: "Communication interference",
-                c: "Communication fault",
-                d: "Electromagnetic interference",
-                correct: "d"
-            },
-            32000: {
-                heading: "This causes variations in the ionization density.",
-                a: "tidal cycle",
-                b: "27-day sunspot cycle",
-                c: "full moon cycle",
-                d: "29-day sunspot cycle",
+            8000: {
+                heading: "Which standard is commonly used for passwordless authentication?",
+                a: "SAML",
+                b: "FIDO2",
+                c: "LDAP",
+                d: "Kerberos",
                 correct: "b"
             },
+            16000: {
+                heading: "What is a 'claim' in the context of identity management?",
+                a: "A request for data",
+                b: "An assertion about an entity",
+                c: "A denial of access",
+                d: "A type of encryption",
+                correct: "b"
+            },
+            32000: {
+                heading: "Which protocol is often used for directory services and single sign-on within a Windows environment?",
+                a: "OAuth",
+                b: "SAML",
+                c: "LDAP",
+                d: "OpenID Connect",
+                correct: "c"
+            },
             64000: {
-                heading: "Highest around noon when ultraviolet light waves from the sun are the most intense.",
-                a: "Maximum usable frequency",
-                b: "optimum frequency",
-                c: "lowest usable frequency",
-                d: "full frequency",
+                heading: "What is the primary benefit of using federated identity management?",
+                a: "Reduces the number of passwords users need to remember",
+                b: "Increases the complexity of identity management",
+                c: "Centralizes all user data in one system",
+                d: "Eliminates the need for user authentication",
                 correct: "a"
             },
             125000: {
-                heading: "A wave whose frequency is too low is absorbed to such an extent that it is too weak for reception.",
-                a: "Maximum usable frequency",
-                b: "optimum frequency",
-                c: "lowest usable frequency",
-                d: "full frequency",
-                correct: "c"
+                heading: "What does 'SCIM' stand for in identity management?",
+                a: "Secure Credential Identity Management",
+                b: "System for Cross-domain Identity Management",
+                c: "Standardized Credential Interface Module",
+                d: "Simple Cloud Identity Management",
+                correct: "b"
             },
             250000: {
-                heading: "The path that a refracted wave follows to the receiver depends on the ___ at which the wave strikes the ionosphere.",
-                a: "Time",
-                b: "Velocity",
-                c: "Frequency",
-                d: "Angle",
-                correct: "d"
+                heading: "Which component is essential for implementing Zero Trust architecture?",
+                a: "Firewall",
+                b: "VPN",
+                c: "Continuous verification",
+                d: "DNS",
+                correct: "c"
             },
             500000: {
-                heading: "The __ layers are responsible for high-frequency, long distance transmission.",
-                a: "F",
-                b: "E",
-                c: "D",
-                d: "Troposphere",
-                correct: "a"
+                heading: "Which of the following is NOT a principle of Zero Trust security?",
+                a: "Always verify",
+                b: "Assume breach",
+                c: "Trust but verify",
+                d: "Least privilege access",
+                correct: "c"
             },
             1000000: {
-                heading: "The factor that has the greatest adverse effect on radio waves is _______.",
-                a: "Weather",
-                b: "Distance",
-                c: "Absorption",
-                d: "Temperature",
-                correct: "c"
+                heading: "Which technology can be used to enhance security by verifying user identity based on their behavior?",
+                a: "Biometrics",
+                b: "Behavioral analytics",
+                c: "CAPTCHA",
+                d: "Token-based authentication",
+                correct: "b"
             }
         },
 
-        "RF Communications": {
+        "Passwordless": {
             100: {
-                heading: "Any transmission, emission, or reception of signs, signals, writings, images, or sounds.",
-                a: "Telecommunications",
-                b: "Broadcast",
-                c: "Calibration",
-                d: "Telemetry",
-                correct: "a"
+                heading: "What does 'passwordless authentication' primarily aim to eliminate?",
+                a: "Usernames",
+                b: "Passwords",
+                c: "Email addresses",
+                d: "Phone numbers",
+                correct: "b"
             },
             200: {
-                heading: "What are the two types of electrical communications?",
-                a: "Radio and wire",
-                b: "Television and wire",
-                c: "Telegraph and radio",
-                d: "Television and radio",
+                heading: "Which of the following is a common method used in passwordless authentication?",
+                a: "Biometric authentication",
+                b: "Password complexity requirements",
+                c: "Secret questions",
+                d: "Password hints",
                 correct: "a"
             },
             300: {
-                heading: "RTTY stand for what?",
-                a: "radio techtypewriter",
-                b: "radar teletypewriter",
-                c: "radio teletypewriter",
-                d: "radar telemetry and targeting",
-                correct: "c"
+                heading: "What does FIDO stand for in the context of passwordless authentication?",
+                a: "Fast Identity Online",
+                b: "First Identity Organization",
+                c: "Free Identity Operation",
+                d: "Frequent Identity Option",
+                correct: "a"
             },
             400: {
-                heading: "Radiotelegraph transmissions are referred to as continuous wave (cw) telegraphy. CW is valuable when communicating to, from, and among widely separated naval units. What is the main advantage of the CW mode?",
-                a: "Cost",
-                b: "Speed",
-                c: "Security",
-                d: "Reliability",
-                correct: "d"
+                heading: "Which of the following is NOT a biometric authentication method?",
+                a: "Fingerprint scanning",
+                b: "Face recognition",
+                c: "SMS passcode",
+                d: "Iris scanning",
+                correct: "c"
             },
             500: {
-                heading: "Tactical communications is usually considered as line-of-sight. What maximum distance is normally within the line-of-sight range?",
-                a: "5 miles",
-                b: "25 miles",
-                c: "50 miles",
-                d: "250 miles",
-                correct: "b"
+                heading: "Which standard is often used for passwordless authentication?",
+                a: "FIDO2",
+                b: "SAML",
+                c: "LDAP",
+                d: "OAuth",
+                correct: "a"
             },
             1000: {
-                heading: "Navy use of the low-frequency band is mainly for which, if any, of the following broadcasts?",
-                a: "Ship to shore",
-                b: "Fleet multichannel",
-                c: "Space vehicle telemetry",
-                d: "None of the above",
-                correct: "b"
+                heading: "Which device is commonly used for passwordless authentication via hardware tokens?",
+                a: "USB security key",
+                b: "Smartwatch",
+                c: "External hard drive",
+                d: "Bluetooth speaker",
+                correct: "a"
             },
             2000: {
-                heading: "VLF transmitters are used primarily for which of the following purposes?",
-                a: "Navigation and fleet communications",
-                b: "Frequency standards and time signals",
-                c: "Astronomy and oscillator calibration",
-                d: "Aircraft control and space vehicle tracking",
-                correct: "a"
-            },
-            4000: {
-                heading: "HF communications over long-distance trunks, or links between fixed terminals are examples of which of the following types of systems?",
-                a: "Fleet broadcast",
-                b: "Point-to-point",
-                c: "Ground-to-air",
-                d: "Ship-to-shore",
+                heading: "What is a key benefit of passwordless authentication?",
+                a: "Higher password complexity",
+                b: "Reduced password resets",
+                c: "Increased password sharing",
+                d: "Longer password expiration times",
                 correct: "b"
             },
-            8000: {
-                heading: "The method for transmitting and receiving still images. These images can be maps, photographs, and handwritten or printed text.",
-                a: "Facsimile",
-                b: "Fading",
-                c: "Framing",
-                d: "Frequency Synthesizer",
+            4000: {
+                heading: "Which of these is a typical example of a passwordless authentication method?",
+                a: "One-time passcodes sent via email",
+                b: "Remembering complex passwords",
+                c: "Security questions",
+                d: "CAPTCHA challenges",
                 correct: "a"
             },
+            8000: {
+                heading: "What is the primary purpose of a security key in passwordless authentication?",
+                a: "To store passwords securely",
+                b: "To provide a second factor of authentication",
+                c: "To generate random passwords",
+                d: "To encrypt data at rest",
+                correct: "b"
+            },
             16000: {
-                heading: "Normally the transmission range of VHF is limited to line of sight. What technique is used to increase this range?",
-                a: "Tropospheric scatter",
-                b: "Atmospheric diversity",
-                c: "Ionospheric maneuvering",
-                d: "Each of the above",
-                correct: "a"
+                heading: "Which of the following is an example of a passwordless authentication provider?",
+                a: "AWS Lambda",
+                b: "Docker",
+                c: "Ansible",
+                d: "Yubico",
+                correct: "d"
             },
 
             32000: {
-                heading: "A method of operation in which telecommunications between stations takes place simultaneously in both directions using two separate frequencies.",
-                a: "Half-duplex",
-                b: "Semi-duplex ",
-                c: "Full-duplex",
-                d: "Broadcast",
-                correct: "c"
+                heading: "Which term refers to the ability of an authentication system to recognize users based on their physical characteristics?",
+                a: "Behavioral analytics",
+                b: "Biometric authentication",
+                c: "Token-based authentication",
+                d: "Time-based authentication",
+                correct: "b"
             },
 
             64000: {
-                heading: "Which of the following switched networks extends tactical voice to shore based operational commands?",
-                a: "NORATS",
-                b: "AUTOVON",
-                c: "AUTODIN",
-                d: "AUTOSEVOCOM",
-                correct: "a"
+                heading: "What is a common security risk associated with traditional password-based systems?",
+                a: "Users forgetting passwords",
+                b: "Password reuse across multiple sites",
+                c: "Hardware malfunctions",
+                d: "Software updates",
+                correct: "b"
             },
             125000: {
-                heading: "Sending a message on several frequencies at once is an example of which of the following transmission types?",
-                a: "Time-diversity",
-                b: "Phase-diversity",
-                c: "Distance-diversity",
-                d: "Frequency-diversity",
-                correct: "d"
+                heading: "Which of these is NOT typically used in passwordless authentication?",
+                a: "Biometrics",
+                b: "SMS passcodes",
+                c: "Password manager",
+                d: "Hardware tokens",
+                correct: "c"
             },
             250000: {
-                heading: "A CW transmitter must contain which of the following components?",
-                a: "A traveling-wave tube",
-                b: "A demodulator",
-                c: "A combiner",
-                d: "A keyer",
-                correct: "d"
-            },
-            500000: {
-                heading: "The process of heterodyning takes place in which of the following receiver circuits?",
-                a: "Mixer",
-                b: "Comparator",
-                c: "Oscillator",
-                d: "Second IF amplifier",
+                heading: "In the context of passwordless authentication, what does the acronym 'OTP' stand for?",
+                a: "One-Time Passcode",
+                b: "Over-The-Phone",
+                c: "Open-To-Public",
+                d: "On-Time Password",
                 correct: "a"
             },
+            500000: {
+                heading: "Which technology can enhance security by analyzing user behavior for authentication purposes?",
+                a: "Biometrics",
+                b: "Behavioral analytics",
+                c: "CAPTCHA",
+                d: "Token-based authentication",
+                correct: "b"
+            },
             1000000: {
-                heading: "Two or more circuits within a receiver are varied by a single control, through which of the following processes?",
-                a: "Frequency synthesis",
-                b: "Automatic gain control",
-                c: "Automatic frequency control",
-                d: "Ganged tuning",
-                correct: "d"
+                heading: "What is a key advantage of passwordless authentication over traditional password-based methods?",
+                a: "Simplified user experience",
+                b: "Increased password complexity",
+                c: "Longer authentication times",
+                d: "Greater dependency on passwords",
+                correct: "a"
             }
         }
     };
@@ -273,10 +273,10 @@ if ($('body').is('.game')) {
 
     localStorage.clear();
 
-    if (index === "index=wave-propagation") {
-        localStorage.setItem("subject", "Wave Propagation");
-    } else if (index === "index=radar-principles") {
-        localStorage.setItem("subject", "Radar Principles");
+    if (index === "index=identity-basics") {
+        localStorage.setItem("subject", "Identity Basics");
+    } else if (index === "index=passwordless") {
+        localStorage.setItem("subject", "Passwordless");
     } else if (index === "index=rf-communications") {
         localStorage.setItem("subject", "RF Communications");
     } else if (index === "index=modulation-principles") {
@@ -312,7 +312,7 @@ if ($('body').is('.game')) {
             answers.forEach(resetAnswers);
 
             function resetAnswers(answer) {
-                document.getElementById(answer).style.backgroundColor = "rgba(30, 39, 46, 75%)";
+                document.getElementById(answer).style.backgroundColor = "#F6F1E7";
                 document.getElementById(answer).disabled = false;
             }
 

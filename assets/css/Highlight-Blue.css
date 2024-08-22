@@ -1,7 +1,8 @@
 .highlight-blue {
     color: #fff;
-    background-color: #1e6add;
     padding: 50px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .highlight-blue p {
