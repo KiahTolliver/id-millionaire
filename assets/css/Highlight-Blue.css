@@ -46,11 +46,12 @@
 
 .highlight-blue .buttons .btn:hover {
     opacity: 1;
+    background-image: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
 }
 
 .highlight-blue .buttons .btn:active {
     transform: translateY(1px);
-    background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
+    background-image: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
     
 }
 
