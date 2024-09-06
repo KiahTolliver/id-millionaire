@@ -55,14 +55,19 @@
 }
 
 .highlight-blue .buttons .btn-primary, .highlight-blue .buttons .btn-primary:active {
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    border-radius: 6px;
-    color: #ebeff1;
+    color: #FFFFFF;
+    width: 361px;
+    height: 331px;
+    top: 493px;
+    left: 415px;
+    gap: 0px;
+    border-radius: 16px;
+    border: 1px;
+    border-image: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
     box-shadow: none;
     text-shadow: none;
     padding: 14px 24px;
     background: transparent;
     transition: background-color 0.25s;
-    border-image: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
 }
 
