@@ -9,8 +9,8 @@
     gap: 0px;
     border-radius: 16px;
     border: 1px;
-    border-image-source: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
-    opacity: 0px;
+    border-image: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+    background: transparent;
 }
 
 .btn.btn-secondary {
