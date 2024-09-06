@@ -50,6 +50,8 @@
 
 .highlight-blue .buttons .btn:active {
     transform: translateY(1px);
+    background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
+    
 }
 
 .highlight-blue .buttons .btn-primary, .highlight-blue .buttons .btn-primary:active {
