@@ -1,13 +1,19 @@
 body {
-    background-image: linear-gradient(#3D227B, #111111);
+    background-image: url(&quot;assets/img/devday.jpg&quot;);
     font-family: 'Roboto', sans-serif;
-
 }
 
 .btn.btn-primary {
-    background: #F6F1E7;
-    color: #1e272e;
-    border-radius: 10%;
+    color: #FFFFFF;
+    border-image-source: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+    width: 361px;
+    height: 331px;
+    top: 493px;
+    left: 415px;
+    gap: 0px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
 }
 
 .btn.btn-secondary {
