@@ -72,8 +72,6 @@ body {
   .logo-placeholder {
     width: 63px;
     height: 63px;
-    background-color: #ddd;
-    border-radius: 50%;
     position: absolute;
     top: 25px;
     left: 400px;
