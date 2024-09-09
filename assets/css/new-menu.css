@@ -1,5 +1,4 @@
 body {
-    font-family: 'Aeonik', sans-serif;
     background: rgb(61,34,123);
     background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 84%);
     height: 100%;
@@ -18,6 +17,7 @@ body {
   }
   .intro {
     text-align: center;
+    font-family: Aeonik-Regular;
     color: white;
     margin-bottom: 50px;
   }
@@ -45,7 +45,7 @@ body {
   }
   
   .txt-small {
-    font-family: Aeonik;
+    font-family: Aeonik-Regular;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.0032em;
@@ -55,7 +55,7 @@ body {
     color: #FFFEFA;
   }
   .txt-large {
-    font-family: Aeonik;
+    font-family: Aeonik-Bold;
     font-size: 120px;
     font-weight: 400;
     letter-spacing: -0.03em;
