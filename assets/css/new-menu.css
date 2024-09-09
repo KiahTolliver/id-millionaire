@@ -5,109 +5,134 @@
     font-style: normal;
 }
 body {
-    background: rgb(61,34,123);
-    background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 84%);
-    height: 100%;
-    width: 100%;
+  font-family:"Aeonik-Regular";
+ background: rgb(61,34,123);
+background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 84%);
+ height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Aeonik-Regular, sans-serif";
-  }
-  .btn-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-bottom: 75%;
-  }
-  .intro {
-    text-align: center;
-    color: white;
-    margin-bottom: 50px;
-  }
-  .btn-game1 {
-    width: 361px;
-    height: 331px;
-    top: 493px;
-    left: 415px;
-    gap: 0px;
-    border: 1px solid;
-    background: transparent;
-    border-image: linear-gradient(45deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%) 1;
-    color: #000;
-    border-radius: 16px;
-  }
-  .btn-game2 {
-    width: 361px;
-    height: 331px;
-    top: 493px;
-    left: 824px;
-    gap: 0px;
-    border-radius: 16px;
-    background: transparent;
-    border-image: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #F2AC84 31.65%, #F2AC84 66.72%, #3F59E4 87.79%, #4016A0 108.56%) 1;
-  }
   
-  .txt-small {
-    font-family: "Aeonik-Regular, sans-serif";
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.0032em;
-    line-height: 1;
-    margin: 0;
-    text-align: center;
-    color: #FFFEFA;
-  }
-  .txt-large {
-    font-family: "Aeonik-Regular, sans-serif";
-    font-size: 120px;
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: #FFFEFA;
-    line-height: 1;
-    margin: 0;
-  }
-  .header {
-    position: relative;
-    width: 100%;
-    height: 100px;
-  }
-  .logo-placeholder {
-    width: 63px;
-    height: 63px;
-    position: absolute;
-    top: 25px;
-    left: 400px;
-    display: inline-block;
-  }
-  .txt-title {
-    font-family: "Aeonik-Regular, sans-serif";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: -0.03em;
-    text-align: left;
-    color: #FFFEFA;
-    line-height: 1;
-    margin: 0;
-    position: absolute;
-    width: 311px;
-    height: 60px;
-    top: 25px;
-    left: 470px;
-    gap: 0px;
-    opacity: 0px;
-  }
-  .btn-back {
-    width: 102px;
-    height: 48px;
-    position: absolute;
-    top: 40px;
-    left: 1354px;
-    background: transparent;
-    border: 1.5px solid #FFFFFF;
-    border-radius: 5px;
-    color: #FFFEFA;
-  }
+}
+.btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 75%;
+}
+.intro {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.btn-game1 {
+width: 361px;
+height: 331px;
+top: 493px;
+left: 550px;
+gap: 0px;
+border: 1px solid;
+position: absolute;
+background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+border-radius: 16px;
+}
+.btn-game1::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 97%);
+  border-radius: 16px;
+}
+.btn-game2 {
+width: 361px;
+height: 331px;
+top: 493px;
+right: 550px;
+gap: 0px;
+position: absolute;
+border-radius: 16px;
+background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+}
+.btn-game2::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 97%);
+  border-radius: 16px;
+}
+
+.txt-small {
+font-family: Aeonik;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.0032em;
+line-height: 1;
+margin: 0;
+color: #FFFEFA;
+position: absolute;
+z-index: 1;
+left: 150px;
+  bottom: 220px;
+}
+.txt-large {
+  font-family: Aeonik;
+font-size: 120px;
+font-weight: 400;
+letter-spacing: -0.03em;
+color: #FFFEFA;
+position: absolute;
+z-index: 1;
+left: 115px;
+bottom: 100px;
+line-height: 1.1;
+margin: 0;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.logo-placeholder {
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  display: inline-block;
+}
+.txt-title {
+ font-family: Aeonik;
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.03em;
+text-align: left;
+color: #FFFEFA;
+line-height: 1;
+margin: 0;
+position: absolute;
+width: 311px;
+height: 60px;
+top: 200px;
+left: 370px;
+gap: 0px;
+opacity: 0px;
+}
+.btn-back {
+width: 102px;
+height: 48px;
+position: absolute;
+top: 200px;
+left: 1354px;
+background: transparent;
+border: 1.5px solid #FFFFFF;
+border-radius: 5px;
+color: #FFFEFA;
+}
