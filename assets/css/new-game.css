@@ -1,11 +1,5 @@
-@font-face {
-    font-family: 'Aeonik-Regular';
-    src: url('assets/fonts/Aeonik-Bold.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
-    font-family: "Aeonik-Regular, sans-serif";
+    font-family: system-ui;
    background: rgb(61,34,123);
   background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 84%);
    height: 100%;
@@ -22,6 +16,8 @@ body {
   .logo-placeholder {
     width: 63px;
     height: 63px;
+    background-color: #ddd;
+    border-radius: 50%;
     position: absolute;
     top: 25px;
     left: 400px;
@@ -84,6 +80,7 @@ body {
   border: 1px;
   opacity: 0px;
   background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+  
   }
   .score-container::before {
     content: '';
@@ -94,6 +91,25 @@ body {
     left: 1px;
     background: #111111;
     border-radius: 16px;
+  }
+  .score-list{
+    color: #FFFEFA;
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .score {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 2;
+  }
+  .highlight {
+    background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
+    font-weight: bold;
+    width: 100%;
   }
   .qa-container {
   width: 800px;
