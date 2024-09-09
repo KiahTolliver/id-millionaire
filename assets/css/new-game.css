@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Aeonik-Regular';
+    src: url('assets/fonts/Aeonik-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Aeonik-Regular, sans-serif";
+   background: rgb(61,34,123);
+  background: linear-gradient(180deg, rgba(61,34,123,1) 0%, rgba(17,17,17,1) 84%);
+   height: 100%;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+  .logo-placeholder {
+    width: 63px;
+    height: 63px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 400px;
+    display: inline-block;
+  }
+  .txt-title {
+   font-family: Aeonik;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #FFFEFA;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  width: 311px;
+  height: 60px;
+  top: 25px;
+  left: 470px;
+  gap: 0px;
+  opacity: 0px;
+  }
+  .btn-back {
+  width: 102px;
+  height: 48px;
+  position: absolute;
+  top: 40px;
+  left: 1354px;
+  background: transparent;
+  border: 1.5px solid #4CB7A3;
+  border-radius: 5px;
+  color: #FFFEFA;
+  }
+  .btn-quit {
+   width: 102px;
+   height: 48px;
+   position: absolute;
+   top: 40px;
+    left: 1480px;
+   border: 1.5px solid #3F59E4;
+   background: transparent;
+   border-radius: 5px;
+   color: #FFFEFA;
+  }
+  .game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+  }
+  .score-container {
+  width: 250px;
+  height: 612px;
+  position: absolute;
+  top: 315px;
+  left: 344px;
+  gap: 0px;
+  border-radius: 16px;
+  border: 1px;
+  opacity: 0px;
+  background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+  }
+  .score-container::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: #111111;
+    border-radius: 16px;
+  }
+  .qa-container {
+  width: 800px;
+  height: 612px;
+  position: absolute;
+  top: 315px;
+  left: 768px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  }
+  .question {
+    position: absolute;
+    width: 800px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
+  }
+  .ans-1 {
+    position: absolute;
+    width: 375px;
+  height: 172px;
+  top: 230px;
+  left: 0;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  border: 1px solid;
+  background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+  
+  }
+  .ans-1::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: #111111;
+    border-radius: 16px;
+  }
+  .ans-2 {
+  position: absolute;
+  width: 375px;
+  height: 172px;
+  top: 230px;
+  right: 0px;
+  gap: 0px;
+  border-radius: 16px;
+  border: 1px solid;
+  background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+  }
+  .ans-2::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: #111111;
+    border-radius: 16px;
+  }
+  .ans-3 {
+  position: absolute;
+  width: 375px;
+  height: 172px;
+  top: 440px;
+  left: 0px;
+  gap: 0px;
+  border-radius: 16px;
+  border: 1px solid;
+  background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+  
+  }
+  .ans-3::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: #111111;
+    border-radius: 16px;
+  }
+  .ans-4 {
+  position: absolute;
+  width: 375px;
+  height: 172px;
+  top: 440px;
+  right: 0px;
+  gap: 0px;
+  border: 1px solid;
+  border-radius: 16px;
+  background: linear-gradient(53.04deg, #4016A0 -9.53%, #3F59E4 11.14%, #4CB7A3 31.65%, #4CB7A3 66.72%, #3F59E4 87.79%, #4016A0 108.56%);
+  }
+  .ans-4::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: #111111;
+    border-radius: 16px;
+  }
