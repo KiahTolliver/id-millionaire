@@ -303,8 +303,10 @@ if ($('body').is('.game')) {
      */
     document.body.addEventListener('click', function (event) {
         const element = event.target;
-
-        if (element.classList.contains("col")) {
+/**
+ * Prevents event from bubbling up to parent elements.
+ */
+        if (element.classList.contains("qa-container")) {
             event.stopPropagation()
         } else {
             element.style.animationPlayState = "paused";
