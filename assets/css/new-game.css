@@ -104,6 +104,10 @@ body {
     font-size: 18px;
     line-height: 2;
   }
+  .score a{
+    color: #FFFEFA;
+    text-decoration: none;
+  }
   .highlight {
     background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
     font-weight: bold;
@@ -129,8 +133,8 @@ body {
     border-radius: 16px;
     opacity: 0px;
     background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
-      color: #FFFEFA;
-      text-align: center;
+    color: #FFFEFA;
+    text-align: center;
     }
     div p {
       font-weight:500;
