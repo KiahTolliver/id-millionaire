@@ -63,39 +63,41 @@
         <script>
            $(document).ready(function() {
               $.getJSON('assets/questions.json', function(data){
-                var questions = data.questions;
-                var index = 0;
-                var score = 0;
-                var currentQuestion = questions[index];
-                var answers = currentQuestion.answers;
-                var correctAnswer = currentQuestion.correctAnswer;
-                var subject = currentQuestion.subject;
-                var intro = currentQuestion.intro;
-                var question = currentQuestion.question;
-                var a = answers.a;
-                var b = answers.b;
-                var c = answers.c;
-                var d = answers.d;
-                var questionElement = $('#subject');
-                var introElement = $('.intro');
-                var aElement = $('#a');
-                var bElement = $('#b');
-                var cElement = $('#c');
-                var dElement = $('#d');
-                var scoreElement = $('#menu');
-                var scoreList = $('.score-list');
-                var scoreItem = $('.score-item');
-                var scoreHighlight = $('.highlight');
-                var scoreItems = $('.score');
+                // var questions = data.questions;
+                // var index = 0;
+                // var score = 0;
+                // var currentQuestion = questions[index];
+                // var answers = currentQuestion.answers;
+                // var correctAnswer = currentQuestion.correctAnswer;
+                // var subject = currentQuestion.subject;
+                // var intro = currentQuestion.intro;
+                // var question = currentQuestion.question;
+                // var a = answers.a;
+                // var b = answers.b;
+                // var c = answers.c;
+                // var d = answers.d;
+                // var questionElement = $('#subject');
+                // var introElement = $('.intro');
+                // var aElement = $('#a');
+                // var bElement = $('#b');
+                // var cElement = $('#c');
+                // var dElement = $('#d');
+                // var scoreElement = $('#menu');
+                // var scoreList = $('.score-list');
+                // var scoreItem = $('.score-item');
+                // var scoreHighlight = $('.highlight');
+                // var scoreItems = $('.score');
 
                 // Load the question 
-                questionElement.text(question);
+                // questionElement.text(question);
 
                 // Load the answers
-                aElement.text(a);
-                bElement.text(b);
-                cElement.text(c);
-                dElement.text(d);
+                // aElement.text(a);
+                // bElement.text(b);
+                // cElement.text(c);
+                // dElement.text(d);
+
+                console.log(data);
               })
            });
         </script>
