@@ -101,10 +101,10 @@
                 $('#subject').text(qData.question.toString());
 
                 // load the answers
-                $('#a').data(qData.answers.a.toString());
-                $('#b').data(qData.answers.b.toString());
-                $('#c').data(qData.answers.c.toString());
-                $('#d').data(qData.answers.d.toString());
+                $('#a').attr('data', qData.answers.a.toString());
+                $('#b').attr('data',qData.answers.b.toString());
+                $('#c').attr('data',qData.answers.c.toString());
+                $('#d').attr('data',qData.answers.d.toString());
 
 
               })
