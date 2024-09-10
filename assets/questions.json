@@ -1,27 +1,180 @@
 [
     {
-      "id": 1,
-   "question": "What does 'passwordless authentication' primarily aim to eliminate?",
-   "answers": 
-     {
-       "a": "A. Usernames",
-       "b": "B. Passwords",
-       "c": "C. Email addresses",
-       "d": "D. Phone numbers"         
-     },
-    "correctAnswer": "B. Passwords" 
+        "id": 1,
+        "question": "What does 'passwordless authentication' primarily aim to eliminate?",
+        "answers": {
+            "a": "A. Usernames",
+            "b": "B. Passwords",
+            "c": "C. Email addresses",
+            "d": "D. Phone numbers"
+        },
+        "correctAnswer": "B. Passwords"
     },
-   {
-    "id": 2,
-    "question": "Test Question 2",
-      "answers": 
-     {
-       "a": "A. Test",
-       "b": "B. Test",
-       "c": "C. Test",
-       "d": "D. Test"         
-     },
-    "correctAnswer": "B. Test" 
+    {
+        "id": 2,
+        "question": "Which of the following is a common method used in passwordless authentication?",
+        "answers": {
+            "a": "A. Biometric authentication",
+            "b": "B. Password complexity requirements",
+            "c": "C. Secret questions",
+            "d": "D. Password hints"
+        },
+        "correctAnswer": "A. Biometric authentication"
+    },
+    {
+        "id": 3,
+        "question": "What does FIDO stand for in the context of passwordless authentication?",
+        "answers": {
+            "a": "A. Fast Identity Online",
+            "b": "B. First Identity Organization",
+            "c": "C. Free Identity Operation",
+            "d": "D.Frequent Identity Option"
+        },
+        "correctAnswer": "A. Fast Identity Online"
+    },
+    {
+        "id": 4,
+        "question": "Which of the following is NOT a biometric authentication method?",
+        "answers": {
+            "a": "A. Fingerprint scanning",
+            "b": "B. Facial recognition",
+            "c": "C. SMS Passcode",
+            "d": "D. Iris scanning"
+        },
+        "correctAnswer": "C. SMS Passcode"
+    },
+    {
+        "id": 5,
+        "question": "Which standard is often used for passwordless authentication?",
+        "answers": {
+            "a": "A. FIDO2",
+            "b": "B. SAML",
+            "c": "C. OAuth",
+            "d": "D. LDAP"
+        },
+        "correctAnswer": "A. FIDO2"
+    },
+    {
+        "id": 6,
+        "question": "Which device is commonly used for passwordless authentication via hardware tokens?",
+        "answers": {
+            "a": "A. YubiKey",
+            "b": "B. Smartwatch",
+            "c": "C. External hard drive",
+            "d": "D. Bluetooth speaker"
+        },
+        "correctAnswer": "A. YubiKey"
+    },
+    {
+        "id": 7,
+        "question": "What is a key benefit of passwordless authentication?",
+        "answers": {
+            "a": "A. Increased password complexity",
+            "b": "B. Reduced risk of password theft",
+            "c": "C. Increased password reuse",
+            "d": "D. Longer password expiration periods"
+        },
+        "correctAnswer": "B. Reduced risk of password theft"
+    },
+    {
+        "id": 8,
+        "question": "Which of these is a typical example of a passwordless authentication method?",
+        "answers": {
+            "a": "A. One-time password (OTP)",
+            "b": "B. CAPTCHA",
+            "c": "C. Security questions",
+            "d": "D. Remembering complex passwords"
+        },
+        "correctAnswer": "A. One-time password (OTP)"
+    },
+    {
+        "id": 9,
+        "question": "What is the primary purpose of a security key in passwordless authentication?",
+        "answers": {
+            "a": "A. To store passwords securely",
+            "b": "B. To provide a second factor of authentication",
+            "c": "C. To generate random passwords",
+            "d": "D. To encrypt user data"
+        },
+        "correctAnswer": "B. To provide a second factor of authentication"
+    },
+    {
+        "id": 10,
+        "question": "Which of the following is an example of a passwordless authentication provider?",
+        "answers": {
+            "a": "A. AWS Lambda",
+            "b": "B. DocuSign",
+            "c": "C. Ansible",
+            "d": "D. Yubico"
+        },
+        "correctAnswer": "D. Yubico"
+    },
+    {
+        "id": 11,
+        "question": "Which component is essential for implementing Zero Trust architecture?",
+        "answers": {
+            "a": "A. Firewall",
+            "b": "B. VPN",
+            "c": "C. Continuous verification",
+            "d": "D. DNS"
+        },
+        "correctAnswer": "C. Continuous verification"
+    },
+    {
+        "id": 12,
+        "question": "Which of the following is NOT a principle of Zero Trust security?",
+        "answers": {
+            "a": "A. Always verify",
+            "b": "B. Assume breach",
+            "c": "C. Trust but verify",
+            "d": "D. Least privilege access"
+        },
+        "correctAnswer": "C. Trust but verify"
+    },
+    {
+        "id": 13,
+        "question": "Which technology can be used to enhance security by verifying user identity based on their behavior?",
+        "answers": {
+            "a": "A. Biometrics",
+            "b": "B. Behavioral analytics",
+            "c": "C. CAPTCHA",
+            "d": "D. Token-based authentication"
+        },
+        "correctAnswer": "B. Behavioral analytics"
+    },
+    {
+        "id": 14,
+        "question": "What is a key advantage of passwordless authentication over traditional password-based methods?",
+        "answers": {
+            "a": "A. Simplified user experience",
+            "b": "B. Increased password complexity",
+            "c": "C. Longer authentication times",
+            "d": "D. Greater risk of password theft"
+        },
+        "correctAnswer": "A. Simplified user experience"
+    },
+    {
+        "id": 15,
+        "question": "What is the purpose of OAuth?",
+        "answers": {
+            "a": "A. To authenticate users",
+            "b": "B. To provide access delegation",
+            "c": "C. To manage user roles",
+            "d": "D. To encrypt data"
+        },
+        "correctAnswer": "B. Test"
+    },
+    {
+        "id": 16,
+        "question": "What is a 'claim' in the context of identity management?",
+        "answers": {
+            "a": "A. A request for data",
+            "b": "B. An assertion about an entity",
+            "c": "C. A denial of access",
+            "d": "D. A type of encryption"
+        },
+        "correctAnswer": "B. An assertion about an entity"
     }
-
 ]
+
+  
