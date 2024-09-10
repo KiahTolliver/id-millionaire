@@ -124,8 +124,8 @@ body {
     opacity: 0px;
     }
     .question {
-    position: absolute;
-    width: 800px;
+      position: relative;
+      width: 800px;
     height: 200px;
     top: 0;
     left: 0;
@@ -133,15 +133,17 @@ body {
     border-radius: 16px;
     opacity: 0px;
     background: linear-gradient(180deg, #4CB7A3 0%, #3F59E4 118.02%);
-    color: #FFFEFA;
-    text-align: center;
+      color: #FFFEFA;
+      text-align: center;
     }
-    .question p {
+    .question-area {
+      position: relative;
+      top: 50%;
+      margin: 30px;
+     
+    }
+    #subject {
       font-weight:500;
-      position: absolute;
-      top: 100px;
-      left: 150px;
-      margin: 0;
     }
     .ans-1 {
       position: absolute;

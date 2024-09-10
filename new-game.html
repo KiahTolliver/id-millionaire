@@ -24,35 +24,38 @@
           <div class= "game-container">
           <div class= "score-container" id="menu"> 
             <ul class="score-list">
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="1000000">1.000.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="500000">500.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="250000">250.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="125000">125.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="64000">64.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="32000">32.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="16000">16.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="8000">8.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="4000">4.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="2000">2.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="1000">1.000</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="500">500</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="400">400</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="300">300</a></li>
-                <li class="score"><a class="nav-link pulse animated infinite" href="#" id="200">200</a></li>
-                <li class="score highlight"><a class="nav-link pulse animated infinite score-item" href="#" id="100">100</a></li>
+                <li class="score" id="16">1.000.000</a></li>
+                <li class="score" id="15">500.000</a></li>
+                <li class="score" id="14">250.000</li>
+                <li class="score" id="13">125.000</li>
+                <li class="score" id="12">64.000</li>
+                <li class="score" id="11">32.000</li>
+                <li class="score" id="10">16.000</li>
+                <li class="score"id="9">8.000</li>
+                <li class="score" id="8">4.000</li>
+                <li class="score"id="7">2.000</li>
+                <li class="score"id="6">1.000</li>
+                <li class="score" id="5">500</li>
+                <li class="score" id="4">400</li>
+                <li class="score" id="3">300</li>
+                <li class="score" id="2">200</li>
+                <li class="score" id="1">100</li>
             </ul>
           </div>
           <div class= "qa-container">
             <div class= "question">
-                <p class="text-center" id="subject"
-               onload="load()">
+              <div class="question-area">
+                <p class="text-center" id="subject">
                 Please select a question to begin
             </p>
             </div>
-            <button class= "ans-1" data-bs-hover-animate="pulse" id="a" data="Test" type="button"></button>
-            <button class= "ans-2" data-bs-hover-animate="pulse" id="b" data="Test" type="button"></button>
-            <button class= "ans-3" data-bs-hover-animate="pulse" id="c" data="Test" type="button"></button>
-            <button class= "ans-4" data-bs-hover-animate="pulse" id="d" data="Test" type="button"></button>
+            </div>
+            <ul id="answers">
+              <li><button id="a" class= "ans-1 ans-button" data="Test"></button></li>
+              <li><button id="b" class= "ans-2 ans-button" data="Test"></button></li>
+              <li><button id="c" class= "ans-3 ans-button" data="Test"></button></li>
+              <li><button id="d" class= "ans-4 ans-button" data="Test"></button></li>
+            </ul>  
           </div>
         </div>
         <script src="assets/js/jquery.min.js"></script>
@@ -62,50 +65,48 @@
 
         <script>
            $(document).ready(function() {
-              $.getJSON('assets/questions.json', function(qData) {
-                // var questions = data.questions;
-                // var index = 0;
-                // var score = 0;
-                // var currentQuestion = questions[index];
-                // var answers = currentQuestion.answers;
-                // var correctAnswer = currentQuestion.correctAnswer;
-                // var subject = currentQuestion.subject;
-                // var intro = currentQuestion.intro;
-                // var question = currentQuestion.question;
-                // var a = answers.a;
-                // var b = answers.b;
-                // var c = answers.c;
-                // var d = answers.d;
-                // var questionElement = $('#subject');
-                // var introElement = $('.intro');
-                // var aElement = $('#a');
-                // var bElement = $('#b');
-                // var cElement = $('#c');
-                // var dElement = $('#d');
-                // var scoreElement = $('#menu');
-                // var scoreList = $('.score-list');
-                // var scoreItem = $('.score-item');
-                // var scoreHighlight = $('.highlight');
-                // var scoreItems = $('.score');
+              $.getJSON('assets/questions.json', function(questions) {
+                
+                let currentQuestionIndex = 0;
 
-                // Load the question 
-                // questionElement.text(question);
+// Function to display a question
+function displayQuestion() {
+     resetUI();
+    if (currentQuestionIndex < questions.length) {            
+        const questionObj = questions[currentQuestionIndex];
+        const id = questionObj.id;
+        $('#' + id).addClass('highlight');
+        $('#subject').text(questionObj.question)
+       $('#a').attr('data', questionObj.answers.a.toString());
+       $('#b').attr('data',questionObj.answers.b.toString());
+       $('#c').attr('data',questionObj.answers.c.toString());
+       $('#d').attr('data',questionObj.answers.d.toString());         
+    }    
+}
+function checkAnswer(selectedAnswer) {
+    const correctAnswer = questions[currentQuestionIndex].correctAnswer;
+     const id = questions[currentQuestionIndex].id;
 
-                // Load the answers
-                // aElement.text(a);
-                // bElement.text(b);
-                // cElement.text(c);
-                // dElement.text(d);
+    if (selectedAnswer === correctAnswer) {
+         $('#' + id).removeClass('highlight');
+        currentQuestionIndex++; // Move to the next question
+        setTimeout(displayQuestion, 1000); // Wait 1 second before moving to the next question
+    } 
+}
+function resetUI(){
+       $('#subject').text('')
+       $('#a').attr('data', '');
+       $('#b').attr('data','');
+       $('#c').attr('data','');
+       $('#d').attr('data','');
+  }
+$('#answers').on('click', '.ans-button', function() {
+ 
+    const selectedAnswer = $(this).attr('data');
+    checkAnswer(selectedAnswer);
+});
 
-                // load the questions
-                $('#subject').text(qData.question.toString());
-
-                // load the answers
-                $('#a').attr('data', qData.answers.a.toString());
-                $('#b').attr('data',qData.answers.b.toString());
-                $('#c').attr('data',qData.answers.c.toString());
-                $('#d').attr('data',qData.answers.d.toString());
-
+displayQuestion();
 
               })
            });
