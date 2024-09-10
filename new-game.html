@@ -49,10 +49,10 @@
                 Please select a question to begin
             </p>
             </div>
-            <button class= "ans-1" data-bs-hover-animate="pulse" id="a" type="button"></button>
-            <button class= "ans-2" data-bs-hover-animate="pulse" id="b" type="button"></button>
-            <button class= "ans-3" data-bs-hover-animate="pulse" id="c" type="button"></button>
-            <button class= "ans-4" data-bs-hover-animate="pulse" id="d" type="button"></button>
+            <button class= "ans-1" data-bs-hover-animate="pulse" id="a" data="" type="button"></button>
+            <button class= "ans-2" data-bs-hover-animate="pulse" id="b" data="" type="button"></button>
+            <button class= "ans-3" data-bs-hover-animate="pulse" id="c" data="" type="button"></button>
+            <button class= "ans-4" data-bs-hover-animate="pulse" id="d" data="" type="button"></button>
           </div>
         </div>
         <script src="assets/js/jquery.min.js"></script>
@@ -97,10 +97,16 @@
                 // cElement.text(c);
                 // dElement.text(d);
 
-                console.log(data);
-
                 // load the questions
                 $('#subject').text(data.question.toString());
+
+                // load the answers
+                $('#a').data(data.answers.a.toString());
+                $('#b').data(data.answers.b.toString());
+                $('#c').data(data.answers.c.toString());
+                $('#d').data(data.answers.d.toString());
+
+
               })
            });
         </script>
