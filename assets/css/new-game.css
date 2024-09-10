@@ -136,7 +136,7 @@ body {
     color: #FFFEFA;
     text-align: center;
     }
-    div p {
+    .question p {
       font-weight:500;
       position: absolute;
       top: 100px;
