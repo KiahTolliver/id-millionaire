@@ -49,10 +49,10 @@
                 Please select a question to begin
             </p>
             </div>
-            <button class= "ans-1" data-bs-hover-animate="pulse" id="a" data="" type="button"></button>
-            <button class= "ans-2" data-bs-hover-animate="pulse" id="b" data="" type="button"></button>
-            <button class= "ans-3" data-bs-hover-animate="pulse" id="c" data="" type="button"></button>
-            <button class= "ans-4" data-bs-hover-animate="pulse" id="d" data="" type="button"></button>
+            <button class= "ans-1" data-bs-hover-animate="pulse" id="a" data="Test" type="button"></button>
+            <button class= "ans-2" data-bs-hover-animate="pulse" id="b" data="Test" type="button"></button>
+            <button class= "ans-3" data-bs-hover-animate="pulse" id="c" data="Test" type="button"></button>
+            <button class= "ans-4" data-bs-hover-animate="pulse" id="d" data="Test" type="button"></button>
           </div>
         </div>
         <script src="assets/js/jquery.min.js"></script>
@@ -62,7 +62,7 @@
 
         <script>
            $(document).ready(function() {
-              $.getJSON('assets/questions.json', function(data){
+              $.getJSON('assets/questions.json', function(qData) {
                 // var questions = data.questions;
                 // var index = 0;
                 // var score = 0;
@@ -98,13 +98,13 @@
                 // dElement.text(d);
 
                 // load the questions
-                $('#subject').text(data.question.toString());
+                $('#subject').text(qData.question.toString());
 
                 // load the answers
-                $('#a').data(data.answers.a.toString());
-                $('#b').data(data.answers.b.toString());
-                $('#c').data(data.answers.c.toString());
-                $('#d').data(data.answers.d.toString());
+                $('#a').data(qData.answers.a.toString());
+                $('#b').data(qData.answers.b.toString());
+                $('#c').data(qData.answers.c.toString());
+                $('#d').data(qData.answers.d.toString());
 
 
               })
