@@ -100,7 +100,7 @@
                 console.log(data);
 
                 // load the questions
-                $('#subject').text(data.questions[0].question);
+                $('#subject').append(`<p> ${data.questions[0].question} </p>`);
               })
            });
         </script>
