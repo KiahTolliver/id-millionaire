@@ -13,6 +13,8 @@
         <meta content="summary" name="twitter:card">
         <meta content="An interactive web app, inspired by Who Wants to Be a Millionaire for the identity community."
               name="twitter:description">
+              <link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet">
+              <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <div class= "header">
@@ -51,11 +53,19 @@
             </div>
             </div>
             <ul id="answers">
-              <li><button id="a" class= "ans-1 ans-button" data="Test"></button></li>
-              <li><button id="b" class= "ans-2 ans-button" data="Test"></button></li>
-              <li><button id="c" class= "ans-3 ans-button" data="Test"></button></li>
-              <li><button id="d" class= "ans-4 ans-button" data="Test"></button></li>
-            </ul>  
+              <li><button id="a" class= "ans-1 ans-button" data="Test">
+                <i class="fa-solid fa-triangle-exclamation" style="color: #ffffff; padding:10px;"></i>
+              </button></li>
+              <li><button id="b" class= "ans-2 ans-button" data="Test">
+                <i class="fa-solid fa-diamond" style="color: #ffffff; padding:10px;"></i>
+              </button></li>
+              <li><button id="c" class= "ans-3 ans-button" data="Test">
+                <i class="fa-solid fa-circle" style="color: #ffffff; padding:10px;"></i>
+              </button></li>
+              <li><button id="d" class= "ans-4 ans-button" data="Test">
+                 <i class="fa-solid fa-square" style="color: #ffffff; padding:10px;"></i>      
+              </button></li>
+            </ul>   
           </div>
         </div>
         <script src="assets/js/jquery.min.js"></script>
